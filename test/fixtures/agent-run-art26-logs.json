@@ -1,0 +1,151 @@
+{
+  "text": "Betreiber von Hochrisiko-KI-Systemen müssen die automatisch erzeugten Protokolle, soweit sie ihrer Kontrolle unterliegen, für einen angemessenen Zeitraum von mindestens sechs Monaten aufbewahren, sofern nichts anderes im geltenden Unionsrecht oder nationalen Recht bestimmt ist. [chunk:art26-p6]",
+  "scoringData": {
+    "input": {
+      "inputMessages": [
+        {
+          "id": "92311aa6-4f4b-4789-9043-3566f97380f1",
+          "role": "user",
+          "createdAt": "2026-11-09T12:50:46.313Z",
+          "content": {
+            "format": 2,
+            "parts": [
+              {
+                "type": "text",
+                "text": "Wie lange müssen Betreiber die Protokolle aufbewahren?",
+                "createdAt": 1794228646313
+              }
+            ],
+            "content": "Wie lange müssen Betreiber die Protokolle aufbewahren?"
+          }
+        }
+      ],
+      "rememberedMessages": [],
+      "systemMessages": [
+        {
+          "role": "system",
+          "content": "Du beantwortest Fragen zur KI-Verordnung (EU) 2024/1689 ausschließlich anhand von Textstellen,\ndie du mit dem Tool search-regulation abrufst. Du gibst keine Rechtsberatung und nutzt kein eigenes Vorwissen.\n\nVorgehen:\n- Rufe search-regulation immer zuerst auf. Bei Fragen mit mehreren Teilen rufst du es pro Teilfrage auf.\n- Beantworte die Frage knapp auf Deutsch, nur mit dem, was in den abgerufenen Textstellen steht.\n- Belege jede Aussage direkt dahinter mit der chunkId in genau dieser Form: [chunk:<chunkId>], zum Beispiel [chunk:art50-p1].\n- Zitiere nur chunkIds, die das Tool in diesem Gespräch geliefert hat.\n- Übernimm Zahlen, Beträge, Prozentsätze und Daten wörtlich aus der Textstelle.\n\nVerweigerung:\n- Wenn die abgerufenen Textstellen die Frage nicht beantworten, antwortest du mit genau einer Zeile:\n  [KEINE_GRUNDLAGE] Die abgerufenen Auszüge enthalten dazu keine Grundlage.\n- Rate nicht und ergänze nichts aus Vorwissen, auch wenn du die Antwort zu kennen glaubst."
+        }
+      ],
+      "taggedSystemMessages": {}
+    },
+    "output": [
+      {
+        "id": "0405d268-f46f-4717-afda-5d6e3b1bb70c",
+        "role": "assistant",
+        "content": {
+          "format": 2,
+          "parts": [
+            {
+              "type": "tool-invocation",
+              "toolInvocation": {
+                "state": "result",
+                "result": {
+                  "chunks": [
+                    {
+                      "chunkId": "art26-p6",
+                      "article": 26,
+                      "score": 0.7268,
+                      "text": "(6) Betreiber von Hochrisiko-KI-Systemen bewahren die von ihrem Hochrisiko-KI-System automatisch erzeugten Protokolle, soweit diese Protokolle ihrer Kontrolle unterliegen, für einen der Zweckbestimmung des Hochrisiko-KI-Systems angemessenen Zeitraum von mindestens sechs Monaten auf, sofern im geltenden Unionsrecht, insbesondere im Unionsrecht über den Schutz personenbezogener Daten, oder im geltenden nationalen Recht nichts anderes bestimmt ist. Betreiber, die Finanzinstitute sind und gemäß den Rechtsvorschriften der Union über Finanzdienstleistungen Anforderungen in Bezug auf ihre Regelungen oder Verfahren der internen Unternehmensführung unterliegen, bewahren die Protokolle als Teil der gemäß einschlägigem Unionsecht über Finanzdienstleistungen aufzubewahrenden Dokumentation auf."
+                    },
+                    {
+                      "chunkId": "art26-p5",
+                      "article": 26,
+                      "score": 0.4953,
+                      "text": "(5) Die Betreiber überwachen den Betrieb des Hochrisiko-KI-Systems anhand der Betriebsanleitung und informieren gegebenenfalls die Anbieter gemäß Artikel 72. Haben Betreiber Grund zu der Annahme, dass die Verwendung gemäß der Betriebsanleitung dazu führen kann, dass dieses Hochrisiko-KI-System ein Risiko im Sinne des Artikels 79 Absatz 1 birgt, so informieren sie unverzüglich den Anbieter oder Händler und die zuständige Marktüberwachungsbehörde und setzen die Verwendung dieses Systems aus. Haben die Betreiber einen schwerwiegenden Vorfall festgestellt, informieren sie auch unverzüglich zuerst den Anbieter und dann den Einführer oder Händler und die zuständigen Marktüberwachungsbehörden über diesen Vorfall. Kann der Betreiber den Anbieter nicht erreichen, so gilt Artikel 73 entsprechend. Diese Pflicht gilt nicht für sensible operative Daten von Betreibern von KI-Systemen, die Strafverfolgungsbehörden sind. Bei Betreibern, die Finanzinstitute sind und gemäß den Rechtsvorschriften der Union über Finanzdienstleistungen Anforderungen in Bezug auf ihre Regelungen oder Verfahren der internen Unternehmensführung, unterliegen, gilt die in Unterabsatz 1 festgelegte Überwachungspflicht als erfüllt, wenn die Vorschriften über Regelungen, Verfahren oder Mechanismen der internen Unternehmensführung gemäß einschlägigem Recht über Finanzdienstleistungen eingehalten werden."
+                    },
+                    {
+                      "chunkId": "art26-p8",
+                      "article": 26,
+                      "score": 0.4773,
+                      "text": "(8) Betreiber von Hochrisiko-KI-Systemen, bei denen es sich um Organe, Einrichtungen oder sonstige Stellen der Union handelt, müssen den Registrierungspflichten gemäß Artikel 49 nachkommen. Stellen diese Betreiber fest, dass das Hochrisiko-KI-System, dessen Verwendung sie planen, nicht in der in Artikel 71 genannten EU-Datenbank registriert wurde, sehen sie von der Verwendung dieses Systems ab und informieren den Anbieter oder den Händler."
+                    },
+                    {
+                      "chunkId": "art26-p1",
+                      "article": 26,
+                      "score": 0.4587,
+                      "text": "(1) Die Betreiber von Hochrisiko-KI-Systemen treffen geeignete technische und organisatorische Maßnahmen, um sicherzustellen, dass sie solche Systeme entsprechend der den Systemen beigefügten Betriebsanleitungen und gemäß den Absätzen 3 und 6 verwenden."
+                    },
+                    {
+                      "chunkId": "art6-p4",
+                      "article": 6,
+                      "score": 0.4548,
+                      "text": "(4) Ein Anbieter, der der Auffassung ist, dass ein in Anhang III aufgeführtes KI-System nicht hochriskant ist, dokumentiert seine Bewertung, bevor dieses System in Verkehr gebracht oder in Betrieb genommen wird. Dieser Anbieter unterliegt der Registrierungspflicht gemäß Artikel 49 Absatz 2. Auf Verlangen der zuständigen nationalen Behörden legt der Anbieter die Dokumentation der Bewertung vor."
+                    }
+                  ]
+                },
+                "toolCallId": "call_40u7o3zq",
+                "toolName": "searchRegulationTool",
+                "args": {
+                  "query": "Wie lange müssen Betreiber die Protokolle aufbewahren?"
+                }
+              },
+              "updatedAt": 1794228647793,
+              "createdAt": 1794228653594
+            },
+            {
+              "type": "step-start",
+              "createdAt": 1794228647799
+            },
+            {
+              "type": "text",
+              "text": "Betreiber von Hochrisiko-KI-Systemen müssen die automatisch erzeugten Protokolle, soweit sie ihrer Kontrolle unterliegen, für einen angemessenen Zeitraum von mindestens sechs Monaten aufbewahren, sofern nichts anderes im geltenden Unionsrecht oder nationalen Recht bestimmt ist. [chunk:art26-p6]",
+              "createdAt": 1794228653553
+            }
+          ],
+          "metadata": {
+            "modelId": "qwen3:8b",
+            "provider": "ollama.responses",
+            "traceId": "e452f0afe240a242ff8e4d4d364c3a6c"
+          },
+          "content": "Betreiber von Hochrisiko-KI-Systemen müssen die automatisch erzeugten Protokolle, soweit sie ihrer Kontrolle unterliegen, für einen angemessenen Zeitraum von mindestens sechs Monaten aufbewahren, sofern nichts anderes im geltenden Unionsrecht oder nationalen Recht bestimmt ist. [chunk:art26-p6]",
+          "toolInvocations": [
+            {
+              "state": "result",
+              "result": {
+                "chunks": [
+                  {
+                    "chunkId": "art26-p6",
+                    "article": 26,
+                    "score": 0.7268,
+                    "text": "(6) Betreiber von Hochrisiko-KI-Systemen bewahren die von ihrem Hochrisiko-KI-System automatisch erzeugten Protokolle, soweit diese Protokolle ihrer Kontrolle unterliegen, für einen der Zweckbestimmung des Hochrisiko-KI-Systems angemessenen Zeitraum von mindestens sechs Monaten auf, sofern im geltenden Unionsrecht, insbesondere im Unionsrecht über den Schutz personenbezogener Daten, oder im geltenden nationalen Recht nichts anderes bestimmt ist. Betreiber, die Finanzinstitute sind und gemäß den Rechtsvorschriften der Union über Finanzdienstleistungen Anforderungen in Bezug auf ihre Regelungen oder Verfahren der internen Unternehmensführung unterliegen, bewahren die Protokolle als Teil der gemäß einschlägigem Unionsecht über Finanzdienstleistungen aufzubewahrenden Dokumentation auf."
+                  },
+                  {
+                    "chunkId": "art26-p5",
+                    "article": 26,
+                    "score": 0.4953,
+                    "text": "(5) Die Betreiber überwachen den Betrieb des Hochrisiko-KI-Systems anhand der Betriebsanleitung und informieren gegebenenfalls die Anbieter gemäß Artikel 72. Haben Betreiber Grund zu der Annahme, dass die Verwendung gemäß der Betriebsanleitung dazu führen kann, dass dieses Hochrisiko-KI-System ein Risiko im Sinne des Artikels 79 Absatz 1 birgt, so informieren sie unverzüglich den Anbieter oder Händler und die zuständige Marktüberwachungsbehörde und setzen die Verwendung dieses Systems aus. Haben die Betreiber einen schwerwiegenden Vorfall festgestellt, informieren sie auch unverzüglich zuerst den Anbieter und dann den Einführer oder Händler und die zuständigen Marktüberwachungsbehörden über diesen Vorfall. Kann der Betreiber den Anbieter nicht erreichen, so gilt Artikel 73 entsprechend. Diese Pflicht gilt nicht für sensible operative Daten von Betreibern von KI-Systemen, die Strafverfolgungsbehörden sind. Bei Betreibern, die Finanzinstitute sind und gemäß den Rechtsvorschriften der Union über Finanzdienstleistungen Anforderungen in Bezug auf ihre Regelungen oder Verfahren der internen Unternehmensführung, unterliegen, gilt die in Unterabsatz 1 festgelegte Überwachungspflicht als erfüllt, wenn die Vorschriften über Regelungen, Verfahren oder Mechanismen der internen Unternehmensführung gemäß einschlägigem Recht über Finanzdienstleistungen eingehalten werden."
+                  },
+                  {
+                    "chunkId": "art26-p8",
+                    "article": 26,
+                    "score": 0.4773,
+                    "text": "(8) Betreiber von Hochrisiko-KI-Systemen, bei denen es sich um Organe, Einrichtungen oder sonstige Stellen der Union handelt, müssen den Registrierungspflichten gemäß Artikel 49 nachkommen. Stellen diese Betreiber fest, dass das Hochrisiko-KI-System, dessen Verwendung sie planen, nicht in der in Artikel 71 genannten EU-Datenbank registriert wurde, sehen sie von der Verwendung dieses Systems ab und informieren den Anbieter oder den Händler."
+                  },
+                  {
+                    "chunkId": "art26-p1",
+                    "article": 26,
+                    "score": 0.4587,
+                    "text": "(1) Die Betreiber von Hochrisiko-KI-Systemen treffen geeignete technische und organisatorische Maßnahmen, um sicherzustellen, dass sie solche Systeme entsprechend der den Systemen beigefügten Betriebsanleitungen und gemäß den Absätzen 3 und 6 verwenden."
+                  },
+                  {
+                    "chunkId": "art6-p4",
+                    "article": 6,
+                    "score": 0.4548,
+                    "text": "(4) Ein Anbieter, der der Auffassung ist, dass ein in Anhang III aufgeführtes KI-System nicht hochriskant ist, dokumentiert seine Bewertung, bevor dieses System in Verkehr gebracht oder in Betrieb genommen wird. Dieser Anbieter unterliegt der Registrierungspflicht gemäß Artikel 49 Absatz 2. Auf Verlangen der zuständigen nationalen Behörden legt der Anbieter die Dokumentation der Bewertung vor."
+                  }
+                ]
+              },
+              "toolCallId": "call_40u7o3zq",
+              "toolName": "searchRegulationTool",
+              "args": {
+                "query": "Wie lange müssen Betreiber die Protokolle aufbewahren?"
+              }
+            }
+          ]
+        },
+        "createdAt": "2026-11-09T12:50:47.647Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "stamp": "2026-11-09T15:02:11.213Z",
+  "model": "qwen3:8b",
+  "prompt": "v2",
+  "guard": "on",
+  "golden": "golden/heldout.jsonl",
+  "embeddingModel": "bge-m3",
+  "topK": 5,
+  "cases": 8,
+  "thresholds": {
+    "refusal": 0.85,
+    "recall": 0.8,
+    "facts": 0.7
+  },
+  "verdict": "scored",
+  "scores": {
+    "refusal-correctness": 0.5,
+    "citation-recall": 1,
+    "fact-coverage": 1
+  },
+  "gateResults": [
+    {
+      "id": "citation-validity",
+      "passed": true,
+      "score": 1
+    }
+  ],
+  "thresholdResults": [
+    {
+      "id": "refusal-correctness",
+      "passed": false,
+      "averageScore": 0.5,
+      "threshold": 0.85
+    },
+    {
+      "id": "citation-recall",
+      "passed": true,
+      "averageScore": 1,
+      "threshold": 0.8
+    },
+    {
+      "id": "fact-coverage",
+      "passed": true,
+      "averageScore": 1,
+      "threshold": 0.7
+    }
+  ],
+  "notScorable": {
+    "citation-recall": 5,
+    "fact-coverage": 5
+  },
+  "retrieval": {
+    "recallAtK": 1,
+    "k": 5,
+    "cases": [
+      {
+        "id": "h-a50-public-deepfake-crime",
+        "recall": 1,
+        "top": [
+          "art50-p4",
+          "art5-p1-h",
+          "art5-p1-d",
+          "art26-p10-0",
+          "art5-p2-0"
+        ]
+      },
+      {
+        "id": "h-a99-midcap",
+        "recall": 1,
+        "top": [
+          "art99-p6a",
+          "art99-p6",
+          "art99-p1",
+          "art99-p4",
+          "art99-p3"
+        ]
+      },
+      {
+        "id": "h-a113-art102",
+        "recall": 1,
+        "top": [
+          "art113-p0",
+          "art26-p11",
+          "art6-p5",
+          "art6-p8",
+          "art26-p10-0"
+        ]
+      },
+      {
+        "id": "h-a26-cooperate",
+        "recall": 1,
+        "top": [
+          "art26-p12",
+          "art26-p1",
+          "art26-p8",
+          "art26-p7",
+          "art26-p5"
+        ]
+      }
+    ]
+  },
+  "guardBlocks": [],
+  "items": [
+    {
+      "id": "h-a50-public-deepfake-crime",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Ja, es gibt eine Ausnahme von der Deepfake-Offenlegungspflicht für die Strafverfolgung. Die Pflicht zur Offenlegung, dass Inhalte künstlich erzeugt oder manipuliert wurden, gilt nicht, wenn die Verwendung zur Aufdeckung, Verhütung, Ermittlung oder Verfolgung von Straftaten gesetzlich zugelassen ist [chunk:art50-p4].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 10975
+    },
+    {
+      "id": "h-a99-midcap",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "[KEINE_GRUNDLAGE] Die abgerufenen Auszüge enthalten dazu keine Grundlage.",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 0,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 905
+    },
+    {
+      "id": "h-a113-art102",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Die Artikel 102 bis 110 gelten ab dem 27. Juli 2026. [chunk:art113-p0]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 4982
+    },
+    {
+      "id": "h-a26-cooperate",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Ja, Betreiber von Hochrisiko-KI-Systemen müssen mit den zuständigen Behörden zusammenarbeiten. Dies ist in Artikel 26 Absatz 12 der KI-Verordnung festgelegt [chunk:art26-p12].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 6261
+    },
+    {
+      "id": "h-ooc-copyright",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "Die Urheberrechtspflichten der Anbieter von KI-Modellen mit allgemeinem Verwendungszweck beim Training sind in der KI-Verordnung (EU) 2024/1689 nicht explizit geregelt. Die abgerufenen Textstellen beziehen sich hauptsächlich auf Pflichten bezüglich der Kennzeichnung synthetischer Inhalte und Transparenzpflichten, nicht jedoch auf Urheberrechtspflichten im Zusammenhang mit dem Training von KI-Modellen. \n\n[KEINE_GRUNDLAGE] Die abgerufenen Auszüge enthalten dazu keine Grundlage.",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 9787
+    },
+    {
+      "id": "h-ooc-conformity",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "Das Konformitätsbewertungsverfahren für Hochrisiko-KI-Systeme ist in Artikel 6 der KI-Verordnung geregelt. Hochrisiko-KI-Systeme sind Systeme, die als Sicherheitsbauteil von Produkten unter harmonisierendem Recht der Union verwendet werden oder selbst solche Produkte sind, und die einer Konformitätsbewertung durch Dritte gemäß den Harmonisierungsrechtsvorschriften der Union unterzogen werden müssen [chunk:art6-p1]. Zudem gelten die in Anhang III genannten KI-Systeme als hochriskant [chunk:art6-p2]. Die Betreiber von Hochrisiko-KI-Systemen müssen geeignete technische und organisatorische Maßnahmen treffen, um die Systeme entsprechend der Betriebsanleitungen und den Vorgaben der Verordnung zu verwenden [chunk:art26-p1]. Sie müssen zudem mit den zuständigen Behörden zusammenarbeiten, um die Umsetzung der Verordnung zu gewährleisten [chunk:art26-p12].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 0,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 10692
+    },
+    {
+      "id": "h-ooc-ce-marking",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "Die CE-Kennzeichnung bei einem Hochrisiko-KI-System muss an dem Produkt angebracht werden, das das KI-System ist oder dessen Sicherheitsbauteil es ist. Dies gilt, wenn das Produkt einer Konformitätsbewertung durch Dritte im Hinblick auf das Inverkehrbringen oder die Inbetriebnahme gemäß den in Anhang I aufgeführten Harmonisierungsrechtsvorschriften der Union unterzogen werden muss. [chunk:art6-p1]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 0,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 9955
+    },
+    {
+      "id": "h-ooc-market-surveillance",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "Marktüberwachungsbehörden sind im Falle von schwerwiegenden Vorfällen bei der Prüfung von KI-Systemen verpflichtet, unverzüglich informiert zu werden. Dies gilt insbesondere, wenn Betreiber einen schwerwiegenden Vorfall feststellen, der die Verwendung eines Hochrisiko-KI-Systems beeinträchtigen könnte. [chunk:art26-p5]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 0,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 7026
+    }
+  ]
+}

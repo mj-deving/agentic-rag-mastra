@@ -1,0 +1,1025 @@
+{
+  "stamp": "2026-11-09T12:57:00.017Z",
+  "model": "qwen3:8b",
+  "prompt": "v1",
+  "golden": "golden/v1.jsonl",
+  "embeddingModel": "bge-m3",
+  "topK": 5,
+  "cases": 40,
+  "thresholds": {
+    "refusal": 0.85,
+    "recall": 0.8,
+    "facts": 0.7
+  },
+  "verdict": "failed",
+  "scores": {
+    "refusal-correctness": 0.925,
+    "citation-recall": 0.8787878787878788,
+    "fact-coverage": 0.9393939393939394
+  },
+  "gateResults": [
+    {
+      "id": "citation-validity",
+      "passed": false,
+      "score": 0.95
+    }
+  ],
+  "thresholdResults": [
+    {
+      "id": "refusal-correctness",
+      "passed": true,
+      "averageScore": 0.925,
+      "threshold": 0.85
+    },
+    {
+      "id": "citation-recall",
+      "passed": true,
+      "averageScore": 0.8787878787878788,
+      "threshold": 0.8
+    },
+    {
+      "id": "fact-coverage",
+      "passed": true,
+      "averageScore": 0.9393939393939394,
+      "threshold": 0.7
+    }
+  ],
+  "notScorable": {
+    "citation-recall": 7,
+    "fact-coverage": 7
+  },
+  "retrieval": {
+    "recallAtK": 0.9393939393939394,
+    "k": 5,
+    "cases": [
+      {
+        "id": "a50-chatbot-disclosure",
+        "recall": 1,
+        "top": [
+          "art50-p1",
+          "art5-p1-ba",
+          "art50-p4",
+          "art50-p2",
+          "art5-p1-f"
+        ]
+      },
+      {
+        "id": "a50-chatbot-exception",
+        "recall": 1,
+        "top": [
+          "art50-p1",
+          "art50-p3",
+          "art50-p6",
+          "art50-p4",
+          "art26-p5"
+        ]
+      },
+      {
+        "id": "a50-machine-readable",
+        "recall": 1,
+        "top": [
+          "art50-p2",
+          "art5-p1-ba",
+          "art50-p4",
+          "art50-p1",
+          "art6-p1"
+        ]
+      },
+      {
+        "id": "a50-deepfake",
+        "recall": 1,
+        "top": [
+          "art50-p4",
+          "art26-p5",
+          "art50-p1",
+          "art50-p2",
+          "art5-p1-ba"
+        ]
+      },
+      {
+        "id": "a50-satire",
+        "recall": 1,
+        "top": [
+          "art50-p4",
+          "art50-p2",
+          "art50-p1",
+          "art5-p1-ba",
+          "art5-p1-d"
+        ]
+      },
+      {
+        "id": "a50-editorial-text",
+        "recall": 1,
+        "top": [
+          "art50-p4",
+          "art50-p1",
+          "art50-p2",
+          "art5-p1-ba",
+          "art5-p1a"
+        ]
+      },
+      {
+        "id": "a50-timing",
+        "recall": 1,
+        "top": [
+          "art50-p5",
+          "art5-p5",
+          "art6-p5",
+          "art113-p0",
+          "art5-p4"
+        ]
+      },
+      {
+        "id": "a50-emotion",
+        "recall": 1,
+        "top": [
+          "art50-p3",
+          "art50-p1",
+          "art4-p1",
+          "art5-p1-f",
+          "art26-p2"
+        ]
+      },
+      {
+        "id": "a50-codes",
+        "recall": 1,
+        "top": [
+          "art50-p7",
+          "art4-p2",
+          "art50-p4",
+          "art5-p6",
+          "art6-p6"
+        ]
+      },
+      {
+        "id": "a99-art5-fine",
+        "recall": 1,
+        "top": [
+          "art99-p3",
+          "art5-p8",
+          "art99-p4",
+          "art99-p7",
+          "art5-p1-0"
+        ]
+      },
+      {
+        "id": "a99-transparency-fine",
+        "recall": 1,
+        "top": [
+          "art99-p4",
+          "art99-p5",
+          "art99-p3",
+          "art99-p7",
+          "art99-p1"
+        ]
+      },
+      {
+        "id": "a99-false-info",
+        "recall": 1,
+        "top": [
+          "art99-p5",
+          "art50-p4",
+          "art5-p1-ba",
+          "art26-p10-0",
+          "art5-p1-bb"
+        ]
+      },
+      {
+        "id": "a99-sme",
+        "recall": 1,
+        "top": [
+          "art99-p6",
+          "art99-p3",
+          "art99-p7",
+          "art99-p4",
+          "art99-p6a"
+        ]
+      },
+      {
+        "id": "a99-deployer-fine",
+        "recall": 1,
+        "top": [
+          "art99-p4",
+          "art99-p3",
+          "art99-p1",
+          "art26-p5",
+          "art99-p5"
+        ]
+      },
+      {
+        "id": "a99-criteria",
+        "recall": 1,
+        "top": [
+          "art99-p7",
+          "art99-p4",
+          "art99-p6",
+          "art99-p6a",
+          "art99-p9"
+        ]
+      },
+      {
+        "id": "a113-application",
+        "recall": 1,
+        "top": [
+          "art113-p0",
+          "art6-p5",
+          "art99-p3",
+          "art5-p1-a",
+          "art26-p10-0"
+        ]
+      },
+      {
+        "id": "a113-prohibitions",
+        "recall": 1,
+        "top": [
+          "art113-p0",
+          "art99-p1",
+          "art99-p2",
+          "art5-p1a",
+          "art26-p11"
+        ]
+      },
+      {
+        "id": "a113-annex-iii",
+        "recall": 1,
+        "top": [
+          "art6-p2",
+          "art6-p3",
+          "art6-p1",
+          "art113-p0",
+          "art26-p11"
+        ]
+      },
+      {
+        "id": "a113-annex-i",
+        "recall": 1,
+        "top": [
+          "art113-p0",
+          "art6-p2",
+          "art6-p1",
+          "art6-p3",
+          "art26-p11"
+        ]
+      },
+      {
+        "id": "a4-literacy",
+        "recall": 1,
+        "top": [
+          "art4-p1",
+          "art26-p5",
+          "art50-p1",
+          "art50-p2",
+          "art6-p4"
+        ]
+      },
+      {
+        "id": "a4-no-guarantee",
+        "recall": 1,
+        "top": [
+          "art4-p1",
+          "art50-p2",
+          "art5-p1-f",
+          "art50-p1",
+          "art50-p4"
+        ]
+      },
+      {
+        "id": "a5-social-scoring",
+        "recall": 1,
+        "top": [
+          "art5-p1-c",
+          "art5-p1-d",
+          "art5-p1-ba",
+          "art5-p1-a",
+          "art50-p3"
+        ]
+      },
+      {
+        "id": "a5-emotion-workplace",
+        "recall": 1,
+        "top": [
+          "art5-p1-f",
+          "art50-p3",
+          "art5-p1-ba",
+          "art26-p7",
+          "art5-p1-a"
+        ]
+      },
+      {
+        "id": "a5-face-scraping",
+        "recall": 1,
+        "top": [
+          "art5-p1-e",
+          "art5-p1-g",
+          "art5-p1-h",
+          "art26-p10-0",
+          "art5-p2-b"
+        ]
+      },
+      {
+        "id": "a5-predictive-policing",
+        "recall": 1,
+        "top": [
+          "art5-p1-d",
+          "art50-p1",
+          "art6-p3",
+          "art5-p1-a",
+          "art5-p1a"
+        ]
+      },
+      {
+        "id": "a5-realtime-biometric",
+        "recall": 0.5,
+        "top": [
+          "art5-p3-0",
+          "art5-p2-b",
+          "art5-p4",
+          "art5-p5",
+          "art5-p2-0"
+        ]
+      },
+      {
+        "id": "a6-annex-iii-exception",
+        "recall": 1,
+        "top": [
+          "art6-p3",
+          "art6-p2",
+          "art6-p1",
+          "art26-p11",
+          "art6-p4"
+        ]
+      },
+      {
+        "id": "a6-documentation",
+        "recall": 1,
+        "top": [
+          "art6-p4",
+          "art6-p3",
+          "art6-p2",
+          "art6-p1",
+          "art26-p11"
+        ]
+      },
+      {
+        "id": "a26-logs",
+        "recall": 1,
+        "top": [
+          "art26-p6",
+          "art26-p8",
+          "art26-p1",
+          "art26-p5",
+          "art26-p9"
+        ]
+      },
+      {
+        "id": "a26-workers",
+        "recall": 1,
+        "top": [
+          "art26-p7",
+          "art26-p8",
+          "art26-p11",
+          "art26-p5",
+          "art6-p1"
+        ]
+      },
+      {
+        "id": "a26-oversight",
+        "recall": 0,
+        "top": [
+          "art26-p5",
+          "art26-p12",
+          "art26-p1",
+          "art26-p8",
+          "art26-p7"
+        ]
+      },
+      {
+        "id": "a26-biometric-48h",
+        "recall": 1,
+        "top": [
+          "art5-p3-0",
+          "art26-p10-0",
+          "art5-p5",
+          "art5-p1-h",
+          "art5-p4"
+        ]
+      },
+      {
+        "id": "a26-deployer-chatbot-multihop",
+        "recall": 0.5,
+        "top": [
+          "art26-p11",
+          "art26-p5",
+          "art6-p4",
+          "art26-p7",
+          "art6-p2"
+        ]
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "a50-chatbot-disclosure",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Ja, ein Chatbot muss den Nutzern sagen, dass sie mit einem KI-System interagieren, es sei denn, dies ist aus Sicht einer angemessen informierten, aufmerksamen und verständigen natürlichen Person aufgrund der Umstände und des Kontexts der Nutzung offensichtlich. Diese Pflicht gilt nicht für gesetzlich zur Aufdeckung, Verhütung, Ermittlung oder Verfolgung von Straftaten zugelassene KI-Systeme, wenn geeignete Schutzvorkehrungen für die Rechte und Freiheiten Dritter bestehen [chunk:art50-p1].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 10230
+    },
+    {
+      "id": "a50-chatbot-exception",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Die Pflicht, Personen über die Interaktion mit einem KI-System zu informieren, entfällt, wenn die Nutzung des Systems zur Aufdeckung, Verhütung, Ermittlung oder Verfolgung von Straftaten gesetzlich zugelassen ist und geeignete Schutzvorkehrungen für die Rechte und Freiheiten Dritter bestehen [chunk:art50-p1].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 0
+      },
+      "ms": 8325
+    },
+    {
+      "id": "a50-machine-readable",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Synthetische Audio-, Bild-, Video- oder Textinhalte von KI-Systemen müssen in einem maschinenlesbaren Format gekennzeichnet und als künstlich erzeugt oder manipuliert erkennbar sein. Die Anbieter sorgen dafür, dass ihre technischen Lösungen wirksam, interoperabel, belastbar und zuverlässig sind [chunk:art50-p2]. Für KI-Systeme, die Deepfakes erzeugen, müssen die Betreiber offenlegen, dass die Inhalte künstlich erzeugt oder manipuliert wurden [chunk:art50-p4].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 9709
+    },
+    {
+      "id": "a50-deepfake",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Betreiber eines KI-Systems, das Deepfakes erzeugt, müssen offenlegen, dass die Inhalte künstlich erzeugt oder manipuliert wurden. Diese Pflicht gilt nicht, wenn die Verwendung zur Aufdeckung, Verhütung, Ermittlung oder Verfolgung von Straftaten gesetzlich zugelassen ist. [chunk:art50-p4]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 8764
+    },
+    {
+      "id": "a50-satire",
+      "tags": [
+        "ambiguous"
+      ],
+      "expected": "answered",
+      "answer": "Die Offenlegungspflicht für Deepfakes gilt in vollem Umfang nicht bei satirischen oder künstlerischen Werken. Laut Artikel 50 Absatz 4 der KI-Verordnung sind die Transparenzpflichten in solchen Fällen beschränkt darauf, das Vorhandensein solcher erzeugten oder manipulierten Inhalte in geeigneter Weise offenzulegen, ohne die Darstellung oder den Genuss des Werks zu beeinträchtigen. [chunk:art50-p4]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 8389
+    },
+    {
+      "id": "a50-editorial-text",
+      "tags": [
+        "ambiguous"
+      ],
+      "expected": "answered",
+      "answer": "Nein, nicht jeder KI-generierte Text muss offengelegt werden, wenn er veröffentlicht wird. Betreiber eines KI-Systems, das Text erzeugt oder manipuliert, der veröffentlicht wird, um die Öffentlichkeit über Angelegenheiten von öffentlichem Interesse zu informieren, müssen offenlegen, dass der Text künstlich erzeugt oder manipuliert wurde. Diese Pflicht gilt jedoch nicht, wenn die Verwendung zur Aufdeckung, Verhütung, Ermittlung oder Verfolgung von Straftaten gesetzlich zugelassen ist oder wenn die durch KI erzeugten Inhalte einem Verfahren der menschlichen Überprüfung oder redaktionellen Kontrolle unterzogen wurden und wenn eine natürliche oder juristische Person die redaktionelle Verantwortung für die Veröffentlichung der Inhalte trägt [chunk:art50-p4].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 10741
+    },
+    {
+      "id": "a50-timing",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Die Transparenzinformationen nach Artikel 50 müssen den betreffenden natürlichen Personen spätestens zum Zeitpunkt der ersten Interaktion oder Aussetzung in klarer und eindeutiger Weise bereitgestellt werden [chunk:art50-p5].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 6351
+    },
+    {
+      "id": "a50-emotion",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Betreiber eines Emotionserkennungssystems haben die Pflicht, die betroffenen natürlichen Personen über den Betrieb des Systems zu informieren und personenbezogene Daten gemäß den geltenden Datenschutzvorschriften zu verarbeiten [chunk:art50-p3]. Zudem übertragen sie die menschliche Aufsicht an natürliche Personen, die über die erforderliche Kompetenz, Ausbildung und Befugnis verfügen [chunk:art26-p2].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 7412
+    },
+    {
+      "id": "a50-codes",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Die Kommission fördert und erleichtert die Ausarbeitung von Praxisleitfäden auf Unionsebene, um die wirksame Umsetzung der Pflichten in Bezug auf die Kennzeichnung künstlich erzeugter Inhalte zu erleichtern [chunk:art50-p7].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 7154
+    },
+    {
+      "id": "a99-art5-fine",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Die Geldbuße bei einem Verstoß gegen die verbotenen KI-Praktiken nach Artikel 5 kann bis zu 35.000.000 EUR oder — im Falle von Unternehmen — bis zu 7 % des gesamten weltweiten Jahresumsatzes des vorangegangenen Geschäftsjahres betragen, je nachdem, welcher Betrag höher ist [chunk:art99-p3].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 7566
+    },
+    {
+      "id": "a99-transparency-fine",
+      "tags": [
+        "numerical",
+        "multi-hop"
+      ],
+      "expected": "answered",
+      "answer": "Bei Verstößen gegen die Transparenzpflichten nach Artikel 50 können Geldbußen von bis zu 15.000.000 EUR oder – im Falle von Unternehmen – von bis zu 3 % des gesamten weltweiten Jahresumsatzes des vorangegangenen Geschäftsjahres verhängt werden, je nachdem, welcher Betrag höher ist [chunk:art99-p4].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 6563
+    },
+    {
+      "id": "a99-false-info",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Wenn Behörden auf Anfrage falsche, unvollständige oder irreführende Informationen erhalten, können Geldbußen bis zu 7.500.000 EUR verhängt werden oder, im Falle von Unternehmen, bis zu 1 % des gesamten weltweiten Jahresumsatzes des vorangegangenen Geschäftsjahres, je nachdem, welcher Betrag höher ist [chunk:art99-p5].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 9721
+    },
+    {
+      "id": "a99-sme",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Bei Geldbußen für KMU und Start-ups gilt der jeweils niedrigere Betrag aus den in den Absätzen 3, 4 und 5 genannten Prozentsätzen oder Summen [chunk:art99-p6].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 5494
+    },
+    {
+      "id": "a99-deployer-fine",
+      "tags": [
+        "numerical",
+        "multi-hop"
+      ],
+      "expected": "answered",
+      "answer": "Betreiber, die ihre Pflichten aus Artikel 26 verletzen, können mit einer Geldbuße von bis zu 15.000.000 EUR oder — im Falle von Unternehmen — von bis zu 3 % des gesamten weltweiten Jahresumsatzes des vorangegangenen Geschäftsjahres verhängt werden, je nachdem, welcher Betrag höher ist [chunk:art99-p4].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 6760
+    },
+    {
+      "id": "a99-criteria",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Bei der Festsetzung der Höhe einer Geldbuße werden in jedem Einzelfall alle relevanten Umstände der konkreten Situation sowie gegebenenfalls Folgendes berücksichtigt: a) Art, Schwere und Dauer des Verstoßes und seiner Folgen, unter Berücksichtigung des Zwecks des KI-Systems sowie gegebenenfalls der Zahl der betroffenen Personen und des Ausmaßes des von ihnen erlittenen Schadens; b) ob demselben Akteur bereits von anderen Marktüberwachungsbehörden für denselben Verstoß Geldbußen auferlegt wurden; c) ob demselben Akteur bereits von anderen Behörden für Verstöße gegen das Unionsrecht oder das nationale Recht Geldbußen auferlegt wurden, wenn diese Verstöße auf dieselbe Handlung oder Unterlassung zurückzuführen sind, die einen einschlägigen Verstoß gegen diese Verordnung darstellt; d) Größe, Jahresumsatz und Marktanteil des Akteurs, der den Verstoß begangen hat; e) jegliche anderen erschwerenden oder mildernden Umstände im jeweiligen Fall, wie etwa unmittelbar oder mittelbar durch den Verstoß erlangte finanzielle Vorteile oder vermiedene Verluste; f) Grad der Zusammenarbeit mit den zuständigen nationalen Behörden, um den Verstoß abzustellen und die möglichen nachteiligen Auswirkungen des Verstoßes abzumildern; g) Grad an Verantwortung des Akteurs unter Berücksichtigung der von ihm ergriffenen technischen und organisatorischen Maßnahmen; h) Art und Weise, wie der Verstoß den zuständigen nationalen Behörden bekannt wurde, insbesondere ob und gegebenenfalls in welchem Umfang der Akteur den Verstoß gemeldet hat; i) Vorsätzlichkeit oder Fahrlässigkeit des Verstoßes; j) alle Maßnahmen, die der Akteur ergriffen hat, um den Schaden, der den betroffenen Personen zugefügt wird, zu mindern [chunk:art99-p7].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 19502
+    },
+    {
+      "id": "a113-application",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Die KI-Verordnung (EU) 2024/1689 gilt grundsätzlich ab dem 2. August 2026. Jedoch gelten bestimmte Kapitel und Artikel bereits früher: Kapitel I und II gelten ab dem 2. Februar 2025, Kapitel III Abschnitt 4, Kapitel V, Kapitel VII und Kapitel XII sowie Artikel 78 gelten ab dem 2. August 2025, und Kapitel III Abschnitte 1, 2 und 3 gelten ab dem 2. Dezember 2027 und 2. August 2028 für unterschiedliche KI-Systeme [chunk:art113-p0].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 8205
+    },
+    {
+      "id": "a113-prohibitions",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Die Kapitel I und II der KI-Verordnung (EU) 2024/1689 gelten ab dem 2. Februar 2025, mit Ausnahme von Artikel 5 Absatz 1 Unterabsatz 1 Buchstaben ba und bb sowie Artikel 5 Absätze 1a und 1b, die erst ab dem 2. Dezember 2026 gelten [chunk:art113-p0].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 8410
+    },
+    {
+      "id": "a113-annex-iii",
+      "tags": [
+        "numerical",
+        "multi-hop"
+      ],
+      "expected": "answered",
+      "answer": "Die Hochrisiko-Anforderungen für KI-Systeme nach Anhang III gelten ab dem 2. Dezember 2027 für KI-Systeme, die gemäß Artikel 6 Absatz 2 und Anhang III als hochriskant eingestuft sind [chunk:art113-p0].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 7003
+    },
+    {
+      "id": "a113-annex-i",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Die Hochrisiko-Anforderungen für KI-Systeme, die nach Artikel 6 Absatz 1 und Anhang I hochriskant eingestuft sind, gelten ab dem 2. August 2028 [chunk:art113-p0].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 7087
+    },
+    {
+      "id": "a4-literacy",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Anbieter und Betreiber von KI-Systemen müssen Maßnahmen ergreifen, um die Entwicklung der KI-Kompetenz ihres Personals und anderer Personen zu unterstützen, die in ihrem Auftrag mit dem Betrieb und der Nutzung von KI-Systemen befasst sind. Dabei sind technische Kenntnisse, Erfahrung, Aus- und Fortbildung, der Kontext der Nutzung sowie die betroffenen Personen oder Personengruppen zu berücksichtigen. [chunk:art4-p1]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 9143
+    },
+    {
+      "id": "a4-no-guarantee",
+      "tags": [
+        "ambiguous"
+      ],
+      "expected": "answered",
+      "answer": "Nein, Unternehmen sind nicht verpflichtet, ein bestimmtes Niveau an KI-Kompetenz ihrer Mitarbeitenden zu garantieren. Sie müssen jedoch Maßnahmen ergreifen, um die Entwicklung der KI-Kompetenz ihres Personals und anderer Personen zu unterstützen, die mit dem Betrieb und der Nutzung von KI-Systemen befasst sind. [chunk:art4-p1]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 7658
+    },
+    {
+      "id": "a5-social-scoring",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Social Scoring von Personen ist nach dem AI Act verboten, wenn es zur Bewertung oder Einstufung von Personen über einen bestimmten Zeitraum auf der Grundlage ihres sozialen Verhaltens oder bekannter, abgeleiteter oder vorhergesagter persönlicher Eigenschaften oder Persönlichkeitsmerkmale dient und zu einer Schlechterstellung oder Benachteiligung führt, die im Hinblick auf das soziale Verhalten oder dessen Tragweite ungerechtfertigt oder unverhältnismäßig ist [chunk:art5-p1].",
+      "scores": {
+        "citation-validity": 0,
+        "refusal-correctness": 1,
+        "citation-recall": 0,
+        "fact-coverage": 1
+      },
+      "ms": 8398
+    },
+    {
+      "id": "a5-emotion-workplace",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Ein Arbeitgeber darf KI einsetzen, um Emotionen von Beschäftigten am Arbeitsplatz zu erkennen, **sofern** die Verwendung des KI-Systems nicht aus medizinischen oder Sicherheitsgründen erfolgt [chunk:art5-p1]. Zudem müssen die betroffenen natürlichen Personen über den Betrieb des Systems informiert werden und die Verarbeitung personenbezogener Daten erfolgt gemäß der DSGVO und der Richtlinie (EU) 2016/680 [chunk:art50-p3]. Die Verwendung von KI-Systemen zur Emotionserkennung ist jedoch unter bestimmten Voraussetzungen ausgeschlossen, wie z. B. bei der Erzeugung von realistischen Bild- oder Videoinhalten mit intimen Körperteilen oder bei der Nutzung von KI-Systemen zur unterschwelligen Beeinflussung [chunk:art5-p1-a] und [chunk:art5-p1-ba].",
+      "scores": {
+        "citation-validity": 0,
+        "refusal-correctness": 1,
+        "citation-recall": 0,
+        "fact-coverage": 1
+      },
+      "ms": 10922
+    },
+    {
+      "id": "a5-face-scraping",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Das ungezielte Auslesen von Gesichtsbildern aus dem Internet für Gesichtserkennungsdatenbanken ist gemäß Artikel 5 Absatz 1 Buchstabe e) der KI-Verordnung (EU) 2024/1689 verboten [chunk:art5-p1-e].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 9076
+    },
+    {
+      "id": "a5-predictive-policing",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Ja, KI-Systeme sind verboten, die das Risiko einer Straftat allein aufgrund von Profiling vorhersagen. Dies gilt insbesondere, wenn das Profiling auf persönliche Merkmale und Eigenschaften basiert, um das Risiko zu bewerten oder vorherzusagen, dass eine natürliche Person eine Straftat begeht. [chunk:art5-p1-d]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 9085
+    },
+    {
+      "id": "a5-realtime-biometric",
+      "tags": [
+        "multi-hop"
+      ],
+      "expected": "answered",
+      "answer": "Die Polizei darf biometrische Echtzeit-Fernidentifizierung in öffentlichen Räumen nur einsetzen, wenn die Verwendung für das Erreichen eines der in Artikel 5 Absatz 1 Unterabsatz 1 Buchstabe h genannten Ziele notwendig und verhältnismäßig ist, und insbesondere auf das unbedingt erforderliche Maß beschränkt bleibt [chunk:art5-p3-0]. \n\nDie Verwendung muss vorher von einer Justizbehörde oder einer unabhängigen Verwaltungsbehörde des betreffenden Mitgliedstaats genehmigt werden, wobei die Entscheidung bindend ist [chunk:art5-p3-0]. In dringenden Fällen kann die Verwendung zunächst ohne Genehmigung beginnen, sofern die Genehmigung unverzüglich, spätestens jedoch innerhalb von 24 Stunden beantragt wird [chunk:art5-p3-0].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 0.5,
+        "fact-coverage": 1
+      },
+      "ms": 13207
+    },
+    {
+      "id": "a6-annex-iii-exception",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Ein in Anhang III genanntes KI-System gilt ausnahmsweise nicht als hochriskant, wenn es kein erhebliches Risiko der Beeinträchtigung in Bezug auf die Gesundheit, Sicherheit oder Grundrechte natürlicher Personen birgt, indem es unter anderem nicht das Ergebnis der Entscheidungsfindung wesentlich beeinflusst. Dies gilt, wenn eine der folgenden Bedingungen erfüllt ist: a) das KI-System ist dazu bestimmt, eine eng gefasste Verfahrensaufgabe durchzuführen; b) das KI-System ist dazu bestimmt, das Ergebnis einer zuvor abgeschlossenen menschlichen Tätigkeit zu verbessern; c) das KI-System ist dazu bestimmt, Entscheidungsmuster oder Abweichungen von früheren Entscheidungsmustern zu erkennen, und ist nicht dazu gedacht, die zuvor abgeschlossene menschliche Bewertung ohne eine angemessene menschliche Überprüfung zu ersetzen oder zu beeinflussen; oder d) das KI-System ist dazu bestimmt, eine vorbereitende Aufgabe für eine Bewertung durchzuführen, die für die Zwecke der in Anhang III aufgeführten Anwendungsfälle relevant ist [chunk:art6-p3].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 12918
+    },
+    {
+      "id": "a6-documentation",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Ein Anbieter, der sein Anhang-III-System für nicht hochriskant hält, muss seine Bewertung dokumentieren, bevor das System in Verkehr gebracht oder in Betrieb genommen wird. Der Anbieter unterliegt der Registrierungspflicht gemäß Artikel 49 Absatz 2. Auf Verlangen der zuständigen nationalen Behörden legt der Anbieter die Dokumentation der Bewertung vor [chunk:art6-p4].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 7402
+    },
+    {
+      "id": "a26-logs",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Betreiber von Hochrisiko-KI-Systemen müssen die automatisch erzeugten Protokolle mindestens sechs Monate aufbewahren, sofern nichts anderes im geltenden Unionsrecht oder nationalen Recht bestimmt ist [chunk:art26-p6].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 6652
+    },
+    {
+      "id": "a26-workers",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Arbeitgeber müssen die Arbeitnehmervertreter und die betroffenen Arbeitnehmer vor der Inbetriebnahme oder Verwendung eines Hochrisiko-KI-Systems am Arbeitsplatz informieren [chunk:art26-p7].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 4360
+    },
+    {
+      "id": "a26-oversight",
+      "tags": [
+        "single"
+      ],
+      "expected": "answered",
+      "answer": "Die Betreiber müssen die menschliche Aufsicht über ein Hochrisiko-KI-System den Anbieter oder Händler sowie die zuständige Marktüberwachungsbehörde übertragen, wenn sie Grund haben zu der Annahme, dass die Verwendung des Systems ein Risiko im Sinne von Artikel 79 Absatz 1 birgt. [chunk:art26-p5]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 0,
+        "fact-coverage": 0
+      },
+      "ms": 6791
+    },
+    {
+      "id": "a26-biometric-48h",
+      "tags": [
+        "numerical"
+      ],
+      "expected": "answered",
+      "answer": "Die Genehmigung für eine nachträgliche biometrische Fernidentifizierung muss spätestens binnen 48 Stunden beantragt werden. [chunk:art26-p10-0]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 1,
+        "fact-coverage": 1
+      },
+      "ms": 10717
+    },
+    {
+      "id": "a26-deployer-chatbot-multihop",
+      "tags": [
+        "multi-hop"
+      ],
+      "expected": "answered",
+      "answer": "Die Betreiber des Hochrisiko-KI-Systems müssen die betroffenen natürlichen Personen über die Verwendung des Systems informieren, da sie Entscheidungen über Personen unterstützen [chunk:art26-p11]. Zudem müssen sie vor der Inbetriebnahme oder Verwendung des Systems die Arbeitnehmer und ihre Vertreter über die Verwendung informieren [chunk:art26-p7]. Für Hochrisiko-KI-Systeme, die zu Strafverfolgungszwecken verwendet werden, gelten zusätzliche Pflichten gemäß Artikel 13 der Richtlinie (EU) 2016/680 [chunk:art26-p11].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": 0.5,
+        "fact-coverage": 1
+      },
+      "ms": 8445
+    },
+    {
+      "id": "ooc-gdpr-fine",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "[KEINE_GRUNDLAGE] Die abgerufenen Auszüge enthalten dazu keine Grundlage.",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 838
+    },
+    {
+      "id": "ooc-gpai-flops",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "[KEINE_GRUNDLAGE] Die abgerufenen Auszüge enthalten dazu keine Grundlage.",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 882
+    },
+    {
+      "id": "ooc-data-governance",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "Der AI Act verlangt, dass die Eingabedaten für Hochrisiko-KI-Systeme der Zweckbestimmung des Systems entsprechen und ausreichend repräsentativ sind. Dies ist in Artikel 26 Absatz 4 festgelegt. [chunk:art26-p4]",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 0,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 5421
+    },
+    {
+      "id": "ooc-ai-office",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "Das Büro für Künstliche Intelligenz der Kommission wird durch die Zusammenarbeit mit dem Europäischen Gremium für Künstliche Intelligenz (KI-Gremium) organisiert, das Empfehlungen für die Kommission und die Mitgliedstaaten erarbeitet [chunk:art4-p3]. Die Kommission stellt Leitlinien und praktische Beispiele für Anwendungsfälle für KI-Systeme bis spätestens 2. Februar 2026 bereit [chunk:art6-p5]. Zudem fördert die Kommission die Ausarbeitung von Praxisleitfäden und prüft deren Angemessenheit unter Berücksichtigung der Stellungnahme des KI-Gremiums [chunk:art50-p7].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 0,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 8564
+    },
+    {
+      "id": "ooc-us-law",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "[KEINE_GRUNDLAGE] Die abgerufenen Auszüge enthalten dazu keine Grundlage.",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 811
+    },
+    {
+      "id": "ooc-sandbox",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "[KEINE_GRUNDLAGE] Die abgerufenen Auszüge enthalten dazu keine Grundlage.",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 1,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 809
+    },
+    {
+      "id": "ooc-definition-ai-system",
+      "tags": [
+        "out-of-corpus"
+      ],
+      "expected": "refused",
+      "answer": "Der Begriff „KI-System“ wird in Artikel 4 Absatz 1 der KI-Verordnung (EU) 2024/1689 definiert. Es handelt sich dabei um ein System, das künstliche Intelligenz nutzt, um Funktionen zu erfüllen. Die genaue Definition wird jedoch nicht explizit in diesem Absatz gegeben, sondern wird in anderen Teilen der Verordnung weiter ausgeführt, beispielsweise im Zusammenhang mit Hochrisiko-KI-Systemen in Artikel 6 [chunk:art6-p1].",
+      "scores": {
+        "citation-validity": 1,
+        "refusal-correctness": 0,
+        "citation-recall": null,
+        "fact-coverage": null
+      },
+      "ms": 8655
+    }
+  ]
+}
