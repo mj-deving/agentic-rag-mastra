@@ -200,6 +200,12 @@ model is one line.
 - A stronger judge for groundedness (does the cited text support the claim), kept as a tracked metric, not a gate.
 - Repeat each run five times and report the spread instead of one number.
 
+
+## Intent
+
+[`ISA.md`](ISA.md) (German) is the spec this repo was built against: what "done" meant, the probe
+that would falsify each criterion, the evidence recorded for it, and the limits left open on purpose.
+
 ## License
 
 Apache-2.0. Regulation text: Regulation (EU) 2024/1689, reusable under Commission Decision 2011/833/EU with attribution.
